@@ -1,3 +1,9 @@
+# udemy
+Projek ini follow udemy course.
+09 dec 2018 - sehingga sebelum Assignment 1 dlm Section 1
+
+
+
 # MyFirstApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.1.
