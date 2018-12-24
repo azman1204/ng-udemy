@@ -1,8 +1,9 @@
-<button class="btn btn-primary" 
-[disabled]="!serverDisabled" 
+<button class="btn btn-primary"
+[disabled]="!serverDisabled"
 (click) = "onCreateServer()">Click Me</button>
-<app-server></app-server>
-<app-server></app-server>
+<!-- <app-server></app-server>
+<app-server></app-server> -->
+<app-server *ngFor="let server of servers"></app-server>
 <p *ngIf="serverCreated; else loggedOut">{{ serverCreationStatus }}</p>
 <ng-template #loggedOut>
     Please friend, login.
@@ -10,10 +11,10 @@
 
 
 Server Name
-<input type="text" class="form-control" 
+<input type="text" class="form-control"
 (input)="onUpdateServerName($event)">
 
-<input type="text" class="form-control" 
+<input type="text" class="form-control"
 [(ngModel)]="serverName">
 
 <p>{{ serverName }}</p>

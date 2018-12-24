@@ -1,0 +1,11 @@
+<div class="container">
+  <button class="btn btn-primary"
+  (click)="onClick()">Display Details</button>
+  <p [ngClass]="{show:show}">
+    Sample Content here ...
+  </p>
+
+  <p *ngFor="let log of logs, let i = index"
+  [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'white'}"
+  [ngClass]="{blue:i >= 4}">{{log}}</p>
+</div>
